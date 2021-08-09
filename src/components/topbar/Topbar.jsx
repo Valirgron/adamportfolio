@@ -1,9 +1,7 @@
 import "./topbar.scss";
-import { Person, Mail,GitHub,LinkedIn} from "@material-ui/icons";
-import { useHistory } from "react-router-dom";
+import { Mail,GitHub,LinkedIn} from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
-  const history = useHistory();
 
   function handleClick(links) {
     window.location.replace(links);
